@@ -1,0 +1,123 @@
+---
+import { global } from "../config";
+---
+
+<header class="mb-8 bg-header">
+	<div class="header-inner | container-site relative">
+		<a class="skip-to-content" href="#main-content" aria-labelledby="Skip to content">Skip to content</a>
+		<nav>
+			<a class="nav-logo" href="/" aria-labelledby="Link to homeage">A novel about expectations</a>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="chapter-1">Read First Chapter</a></li>
+				<li><a 
+					href={global.buyBookLink}
+					target="_blank"
+					class="buy"
+					>
+					<?xml version="1.0" encoding="UTF-8"?>
+					<svg 
+						width="25" 
+						height="25"
+						version="1.1" 
+						viewBox="0 0 1200 1200" 
+						xmlns="http://www.w3.org/2000/svg"
+						>
+						<path
+							d="m334.23 196.39 416.97-3.6914v-132.7zm31.414 32.246 433 241.88v404.71h97.613v-646.59zm-65.645 650.98 466.14 260.38v-650.39l-466.14-260.38z"
+							fill-rule="evenodd"
+						/>
+					</svg>
+					Buy on Amazon
+				</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<style>
+	header {
+		background-color : var(--bg-header);
+	}
+
+	nav {
+		/* width        : 100%; */
+		min-height      : var(--nav-height);
+		display         : flex;
+		justify-content : space-between;
+		font-family     : var(--font-mono);
+		font-size       : .9rem;
+		letter-spacing  : .0125em;
+		word-spacing    : -.267em;
+		text-transform  : uppercase;
+		line-height     : 1;
+	}
+
+	nav .nav-logo {
+		padding-inline  : .5rem;
+		text-decoration : none;
+		color           : var(--white);
+	}
+
+	nav ul {
+		display         : flex;
+		align-items     : center;
+		align-items     : stretch;
+		gap             : .25rem;
+		list-style-type : none;
+		margin          : 0;
+		padding         : 0;
+	}
+
+	nav li {
+		display : flex;
+		/* align-items : stretch; */
+		margin : 0;
+		padding : 0;
+		height : 100%;
+	}
+
+	nav a {
+		display         : flex;
+		align-items     : center;
+		padding-inline  : .5rem;
+		line-height     : 1;
+		text-decoration : none;
+		color           : var(--white);
+		transition      : color 400ms cubic-bezier(0.33, 1, 0.68, 1);
+		/* transition                 : $property;
+		transition-duration        : $speed;
+		transition-timing-function : $timing; */
+
+		&:hover {
+			/* color: pink; */
+			color: springgreen;
+			color: var(--text-nav--hover);
+		}
+	}
+
+	nav a.buy svg {
+		/* display : block; */
+		margin-right : .25rem;
+		fill : fuchsia;
+		fill : var(--accent-dark);
+		transition : fill 400ms cubic-bezier(0.33, 1, 0.68, 1);
+	}
+
+	nav a.buy:hover svg {
+		fill : red;
+	}
+
+
+
+/* 	nav a:is(.buy) {
+		&:hover {
+			background-color : rgb(150,30,30);
+			color : #FFF;
+			background-color : rgb(220,80,80);
+		}
+	} 
+*/
+	/* background-color: springgreen */
+</style>
+

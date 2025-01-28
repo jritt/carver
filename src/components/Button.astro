@@ -1,0 +1,33 @@
+---
+import { global } from "../config";
+---
+<a href={global.buyBookLink} class="buy">Buy on Amazon</a>
+
+<style>
+	/* TODO: Refactor */
+	a {
+		/* position: relative; */
+		display          : inline-block;
+		padding          : 13px 20px; /* 13px 50px; */
+		/* border         : 1px solid transparent; */
+		background-color : var(--accent);
+		border         : none;
+		outline        : 0;
+		text-decoration: none;
+		cursor         : pointer;
+		user-select    : none;
+		touch-action   : manipulation;
+		transition     : 0.25s;
+		font-size      : 1.125rem;
+		font-weight    : 400;
+		text-transform : uppercase;
+		color          : var(--text-color);
+		/* font-family: var(--font-mono); */
+		/* word-spacing: -0.2em; */
+
+		&:hover {
+			background-color : white;
+		}
+	}
+
+</style>
