@@ -1,8 +1,0 @@
-@import "_vars.css";
-@import "_layout.css";
-@import "_type.css";
-@import "_colors.css";
-@import "_accessibility.css";
-
-.x { outline : 1px dotted fuchsia }
-.X { outline : 2px solid green }
